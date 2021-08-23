@@ -14,7 +14,7 @@ class Face_detection:
 		'Detect faces using Opencv'
 
 		# cascade files
-		facedetect = cv.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+		facedetect = cv.CascadeClassifier(cv.data.haarcascades + 'haarcascade_frontalface_default.xml')
 		detect_img = np.array(up_image.convert('RGB'))
 		new_img  = cv.cvtColor(detect_img,1)
 		faces = facedetect.detectMultiScale(new_img,1.3,5)
@@ -24,7 +24,7 @@ class Face_detection:
 
 	def detect_eyes(self,up_image):
 		'Detect eyes using Opencv'
-		eyes = cv.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
+		eyes = cv.CascadeClassifier(cv.data.haarcascades + 'haarcascade_eye.xml')
 		detect_img = np.array(up_image.convert('RGB'))
 		new_img1 = cv.cvtColor(detect_img,1)
 		both_eye = eyes.detectMultiScale(new_img1,1.3,5)
