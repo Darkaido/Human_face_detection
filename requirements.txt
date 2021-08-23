@@ -97,7 +97,6 @@ protobuf==3.17.3
 psutil==5.8.0
 ptyprocess==0.7.0
 pyarrow==5.0.0
-pycodestyle==2.6.0
 pycparser==2.20
 pydeck==0.6.2
 pydocstyle==6.1.1
