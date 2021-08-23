@@ -105,7 +105,7 @@ class Face_detection:
 				if feature_choice == "Facial_Landmarks":
 					result_img = self.facial_landmarks(up_image)
 					st.image(result_img)
-					st.success("Found {} face for landmark in image.".format(len(result_img)//480))
+					
 
 
 
